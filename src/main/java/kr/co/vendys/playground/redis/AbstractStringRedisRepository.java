@@ -3,10 +3,8 @@ package kr.co.vendys.playground.redis;
 import java.lang.reflect.Field;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
-import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.util.Assert;
@@ -14,7 +12,6 @@ import org.springframework.util.StringUtils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 
 public abstract class AbstractStringRedisRepository<ENTITY, ID> implements StringRedisRepository<ENTITY, ID> {
 
